@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <fieldset style="float: left;">
+                <h1>Titulo formulario</h1>
+                <form method="POST">
+                    <label for="texto" title="Texto">Texto:</label>
+                    <input id="texto" type="text" maxlength="10" name="nombre" value="Dato por defecto"/>
+                    <hr/>
+                    <label for="conasena" title="Texto">Contraseña:</label>
+                    <input id="conasena" type="password" name="conasena"/>
+                    <hr/>
+                    <label for="fecha">Fecha</label>
+                    <input id="fecha" type="date" min="2021-01-01" max="2021-12-31" value="2021-09-10"/>
+                    <hr/>
+                    <label for="hora">Hora</label>
+                    <input id="hora" type="time"/>
+                    <hr/>
+                    <label for="color">Color</label>
+                    <input id="color" type="color"/>
+                    <hr/>
+                    <label for="rango">Rango</label>
+                    <input id="rango" type="range" min="0" max="10"/>
+                    <hr/>
+                    <label for="correo">Correo</label>
+                    <input id="correo" type="email"/>
+                    <hr/>
+                    <label title="Genero">Genero</label>
+                    <input type="radio" name="genero" value="1" checked/> Masculino
+                    <input type="radio" name="genero" value="2"/> Femenido
+                    <hr/>
+                    <label title="Genero">Vehiculo</label>
+                    <input type="checkbox" name="moto" value="1"/> Moto
+                    <input type="checkbox" name="carro" value="2" checked/> Carro
+                    <input type="checkbox" name="avion" value="3"/> Avión
+                    <hr/>
+                    <label for="numero" title="Numero">Numero</label>
+                    <input id="numero" type="number" step="2" min="0" max="20"/>
+                    <hr/>
+                    <label title="Genero" for="vehiculo">Vehiculo</label>
+                    <select id="vehiculo">
+                        <option value="1">Moto</option>
+                        <option value="2">Carro</option>
+                        <option value="3">Avión</option>
+                    </select>
+                    <hr/>
+                    <label title="Genero" >Vehiculo</label>
+                    <datalist>
+                        <option value="1">Moto</option>
+                        <option value="2">Carro</option>
+                        <option value="3">Avión</option>
+                    </datalist>
+                    <hr/>
+                    <label for="area">Área de Texto</label>
+                    <textarea id="area" rows="4" cols="60">Dato por defecto</textarea>
+                    <hr/>
+                    <input type="submit"/>
+                    <input type="reset"/>
+                </form>
+            </fieldset>
+            <fieldset style="float: left;">
+                <img src="https://cdn11.bigcommerce.com/s-89ffd/images/stencil/1280x1280/products/54358/181330/4977524588313_dfb605fc969113be6300a9fd3003325d__87562.1553773523.jpg" width="200" height="150"/>
+            </fieldset>
+        </div>
+    </body>
+</html>

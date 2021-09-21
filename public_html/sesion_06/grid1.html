@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .parent {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+            }
+
+            .div1 { 
+                border: 1px #000000 solid;
+                grid-area: 1 / 1 / 2 / 5; 
+            }
+            .div2 {
+                border: 1px #000000 solid;
+                grid-area: 2 / 1 / 4 / 2; 
+            }
+            .div3 {
+                border: 1px #000000 solid;
+                grid-area: 2 / 4 / 3 / 5; 
+            }
+            .div4 {
+                border: 1px #000000 solid;
+                grid-area: 3 / 4 / 4 / 5; 
+            }
+            .div5 {
+                border: 1px #000000 solid;
+                grid-area: 2 / 2 / 4 / 4; 
+            }
+            .div6 {
+                border: 1px #000000 solid;
+                grid-area: 4 / 1 / 5 / 5; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="div1">
+                ENCABEZADO
+            </div>
+            <div class="div2">
+                Izquierdo
+            </div>
+            <div class="div3">
+                Derecho 1
+            </div>
+            <div class="div4">
+                Derecho 2
+            </div>
+            <div class="div5">
+                CONTENIDO
+            </div>
+            <div class="div6">
+                Pie de página
+            </div>
+        </div>
+    </body>
+</html>

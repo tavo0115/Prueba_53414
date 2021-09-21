@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "encabezado encabezado encabezado derecho1"
+                    "izquierdo contenido contenido derecho1"
+                    "izquierdo contenido contenido derecho2"
+                    "izquierdo pie pie derecho2";
+            }
+
+            .encabezado { 
+                grid-area: encabezado; 
+                border: 1px #000000 solid;
+                background-color: #BDBDBD;
+            }
+
+            .izquierdo { 
+                border: 1px #000000 solid;
+                grid-area: izquierdo; 
+            }
+
+            .derecho1 { 
+                border: 1px #000000 solid;
+                grid-area: derecho1; 
+            }
+
+            .derecho2 { 
+                border: 1px #000000 solid;
+                grid-area: derecho2; 
+            }
+
+            .pie { 
+                border: 1px #000000 solid;
+                grid-area: pie; 
+            }
+
+            .contenido { 
+                border: 1px #000000 solid;
+                grid-area: contenido; 
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="encabezado">
+                <img src="imagenes/systemtech.png"/>
+            </div>
+            <div class="izquierdo">
+                Izquierdo
+            </div>
+            <div class="derecho1">
+                Derecho 1
+            </div>
+            <div class="derecho2">
+                Derecho 2
+            </div>
+            <div class="contenido">
+                CONTENIDO
+            </div>
+            <div class="pie">                
+                Pie de página
+            </div>
+        </div>
+    </body>
+</html>
