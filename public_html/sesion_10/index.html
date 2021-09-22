@@ -6,11 +6,14 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>MI PÁGNA</title>
+        <title>MI PÁGINA</title>
         <meta charset="UTF-8">
         <meta name="title" content="El ttulo a ranquear en el motor">
         <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
         <link rel="stylesheet" href="estilos.css">
+    <script>
+        alert('Inicio')
+    </script>
     </head>
     <body>
         <div class="container">
@@ -22,11 +25,9 @@ and open the template in the editor.
                     <img id="navbar_logo" src="http://systemtech.com.co/images/logo-desarrollo.png" />
                 </div>
                 <div class="nav_02" style="position: relative;">
-                    <a id="link_registro" style="position: absolute; top: 30%; left: 30%;" href="registro.html" target="_self">
-                        <button id="btn_irRegistro">
-                            REGISTRO
-                        </button>
-                    </a>
+                    <button id="btn_irRegistro" style="position: absolute; top: 30%; left: 30%;" onmouseout="alert('salir del elemento'); "onmouseover="alert('sobre el elemento');" onclick="alert('Hola Mundo');">
+                        REGISTRO
+                    </button>
                 </div>
             </nav>
             <section class="section">
