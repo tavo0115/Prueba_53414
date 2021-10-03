@@ -1,6 +1,11 @@
-/process.stdin.resume();
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+process.stdin.resume();
 process.stdin.setEncoding('utf8');
-// Your code here!
 
 var persona = {
     nombre : {

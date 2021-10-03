@@ -29,13 +29,13 @@ function validar(){
     var error = "";
     let form = document.formulario;
     if(form.texto.value.length === 0){
-        error += "El elemento Texto es obligatorio \n";
+        error += "El elemento 'Texto' es obligatorio \n";
     }
     if(form.fecha.value.length === 0){
-        error += "El elemento Fecha es obligatorio \n";
+        error += "El elemento 'Fecha' es obligatorio \n";
     }
     if(form.hora.value.length === 0){
-        error += "El elemento Hora es obligatorio \n";
+        error += "El elemento 'Hora' es obligatorio \n";
     }
     if(error === ""){
         alert("Validación exitosa");
